@@ -5,6 +5,7 @@ export const HomeWrapper = styled.main`
     .list__posts{
         display: flex;
         flex-wrap: wrap;
-        gap: 24px
+        gap: 24px;
+        justify-content: center
     }
 `
