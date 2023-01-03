@@ -6,6 +6,7 @@ export const BannerWrapper = styled.div`
     padding: 120px 10vw;
     display: flex;
     justify-content: space-between;
+    margin-bottom: -2.5rem;
 
     .banner__section-text{
         width: 588px
