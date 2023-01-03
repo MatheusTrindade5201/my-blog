@@ -1,9 +1,10 @@
+import Banner from "@/components/banner"
 import { HomeWrapper } from "./style"
 
 const Home = () => {
     return(
         <HomeWrapper>
-            <p>Ola Mundo</p>
+            <Banner />
         </HomeWrapper>
     )
 }
