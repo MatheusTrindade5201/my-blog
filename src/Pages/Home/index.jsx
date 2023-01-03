@@ -5,7 +5,6 @@ import posts from '@/json/posts.json';
 import Post from "@/components/posts"
 
 const Home = () => {
-    console.log(posts);
     return(
         <HomeWrapper>
             <Banner />
