@@ -6,10 +6,15 @@ export const MenuLinkWrapper = styled.li`
     .link{
         color: black;
         text-decoration: none;
-        font-size: 18px
+        font-size: 20px;
+        transition: .2s
     }
 
     .active{
+        text-decoration: underline;
+    }
+
+    .link:hover{
         text-decoration: underline;
     }
     
