@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const HomeWrapper = styled.main`
+export const HomeWrapper = styled.div`
+    height: 100vh;
 
     .list__posts{
         display: flex;

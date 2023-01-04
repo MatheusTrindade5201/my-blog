@@ -7,7 +7,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        font-family: 'Raleway' , sans-serif
+        font-family: 'Raleway' , sans-serif;
+        min-height: 100vh
     }
 `
 

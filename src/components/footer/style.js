@@ -7,5 +7,5 @@ export const FooterWrapper = styled.footer`
     display: flex;
     justify-content: center;
     color: #ffffff;
-    gap: 1rem
+    gap: 1rem;
 `

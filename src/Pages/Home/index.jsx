@@ -7,7 +7,6 @@ import Post from "@/components/posts"
 const Home = () => {
     return(
         <HomeWrapper>
-            <Banner />
             <ul className="list__posts">
                 {posts.map((iten) => (
                     <Post key={iten.id} post={iten} />
