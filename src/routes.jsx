@@ -12,8 +12,8 @@ const AppRouter = () => {
             <HeaderBar />
             <Routes>
                 <Route path="/" element={<StandardPage />}>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/aboutMe" element={<AboutMe />} />
+                    <Route index element={<Home />} />
+                    <Route path="aboutMe" element={<AboutMe />} />
                 </Route>
             </Routes>
             <GlobalStyle />
