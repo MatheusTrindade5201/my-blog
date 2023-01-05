@@ -4,6 +4,7 @@ import HeaderBar from "./components/header"
 import StandardPage from "./components/standardPage"
 import AboutMe from "./Pages/AboutMe"
 import Home from "./Pages/Home"
+import Post from "./Pages/Post"
 import GlobalStyle from "./style/globalStyle"
 
 const AppRouter = () => {
@@ -14,6 +15,7 @@ const AppRouter = () => {
                 <Route path="/" element={<StandardPage />}>
                     <Route index element={<Home />} />
                     <Route path="aboutMe" element={<AboutMe />} />
+                    <Route path="post/:id" element={<Post />} />
                 </Route>
             </Routes>
             <GlobalStyle />
