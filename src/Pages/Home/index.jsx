@@ -2,7 +2,7 @@ import Banner from "@/components/banner"
 import { HomeWrapper } from "./style"
 
 import posts from '@/json/posts.json';
-import Post from "@/components/posts"
+import Post from "@/components/postsCard"
 
 const Home = () => {
     return(

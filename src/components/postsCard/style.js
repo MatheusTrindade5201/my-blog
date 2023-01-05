@@ -14,8 +14,9 @@ export const PostWrapper = styled.div`
     }
 
     p{
-        color: #041833;;
-        font-weight: 600
+        color: #041833;
+        font-weight: 600;
+        text-decoration: unset
     }
 
     button{
