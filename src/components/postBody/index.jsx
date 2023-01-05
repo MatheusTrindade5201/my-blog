@@ -1,8 +1,8 @@
-import { BiographyWrapper } from "./style";
+import { PostBodyWrapper } from "./style";
 
-const Biography = ({title, children, bannerPath, biographyPhoto}) => {
+const PostBody = ({title, children, bannerPath, postPhoto}) => {
     return(
-        <BiographyWrapper>
+        <PostBodyWrapper>
             <div className="about__me-banner"
                 style={{backgroundImage: `url(${bannerPath})`}}
             >
@@ -10,11 +10,11 @@ const Biography = ({title, children, bannerPath, biographyPhoto}) => {
             </div>
 
             <div className="content">
-            <img className="biography__photo" src={biographyPhoto} />
+            <img className="biography__photo" src={postPhoto} />
             {children}
             </div>
-        </BiographyWrapper>
+        </PostBodyWrapper>
     )
 }
 
-export default Biography
+export default PostBody

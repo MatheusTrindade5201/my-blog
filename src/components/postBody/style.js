@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BiographyWrapper = styled.article`
+export const PostBodyWrapper = styled.article`
     margin-top: 2.5rem;
 
     .about__me-banner, .title{
