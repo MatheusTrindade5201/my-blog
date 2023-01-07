@@ -1,9 +1,11 @@
-import { useParams } from "react-router-dom"
+import { Route, Routes, useParams } from "react-router-dom"
 import { PostPageWrapper } from "./style"
 import ReactMarkdown from "react-markdown";
 
 import posts from '@/json/posts.json';
 import PostBody from "@/components/postBody";
+import Page404 from "../Error404";
+import StandardPage from "@/components/standardPage";
 
 const Post = () => {
 
@@ -12,21 +14,28 @@ const Post = () => {
         return post.id === Number(path.id)
     })
 
-    if(!post){
-        return <h1 style={{marginTop: '2.5rem'}}>Post not found</h1>
+    if (!post) {
+        return <Page404 />
     }
 
-    return(
-        <PostPageWrapper>
-            <PostBody 
-            bannerPath={`/posts/${post.id}/capa.png`} 
-            title={post.titulo}
-            >
-                <ReactMarkdown className="post-markdown-container">
-                    {post.texto}
-                </ReactMarkdown>
-            </PostBody>
-        </PostPageWrapper>
+    return (
+        <Routes>
+            <Route path="*" element={<StandardPage />}>
+                <Route index element={
+                    <PostPageWrapper>
+                    <PostBody
+                        bannerPath={`/posts/${post.id}/capa.png`}
+                        title={post.titulo}
+                    >
+                        <ReactMarkdown className="post-markdown-container">
+                            {post.texto}
+                        </ReactMarkdown>
+                    </PostBody>
+                </PostPageWrapper>
+                }/>
+            </Route>
+        </Routes>
+
     )
 }
 
