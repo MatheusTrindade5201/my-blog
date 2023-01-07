@@ -35,4 +35,8 @@ export const Page404Wrapper = styled.div`
         margin-top: 2rem;
         text-decoration: none
     }
+
+    .button:hover{
+        cursor: pointer;
+    }
 `

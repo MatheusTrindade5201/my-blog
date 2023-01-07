@@ -1,9 +1,12 @@
 import { Page404Wrapper } from "./style"
 
 import dogImage from '@/assets/images/erro_404.png'
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 const Page404 = () => {
+
+    const navigate = useNavigate()
+
     return(
         <Page404Wrapper>
             <div className="info">
@@ -12,7 +15,7 @@ const Page404 = () => {
                 <p>Tem certeza de que era isso que você estava procurando?</p> 
                 <p>Aguarde uns instantes e recarregue a página, ou volte para a página inicial.</p>
                 <div className="bottom-div">
-                    <Link className="button" to={'/'}>Voltar</Link>
+                    <button onClick={() => navigate(-1)} className="button" to={'/'}>Voltar</button>
                     <img src={dogImage} />
                 </div>
 
