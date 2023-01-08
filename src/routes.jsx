@@ -17,7 +17,7 @@ const AppRouter = () => {
                     <Route index element={<Home />} />
                     <Route path="aboutMe" element={<AboutMe />} />
                 </Route>
-                <Route path="post/:id" element={<Post />} />
+                <Route path="post/:id/*" element={<Post />} />
                 <Route path="/*" element={<Page404 />} />
             </Routes>
             <GlobalStyle />
