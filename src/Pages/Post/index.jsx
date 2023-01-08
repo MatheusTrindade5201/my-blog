@@ -6,6 +6,7 @@ import posts from '@/json/posts.json';
 import PostBody from "@/components/postBody";
 import Page404 from "../Error404";
 import StandardPage from "@/components/standardPage";
+import Recomendation from "@/components/recomendations";
 
 const Post = () => {
 
@@ -31,6 +32,7 @@ const Post = () => {
                             {post.texto}
                         </ReactMarkdown>
                     </PostBody>
+                    <Recomendation currentPost={post.id} />
                 </PostPageWrapper>
                 }/>
             </Route>
